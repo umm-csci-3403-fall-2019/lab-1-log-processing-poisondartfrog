@@ -12,7 +12,7 @@ do
 	tar -zxf "$f" --directory "$output_dir"
 done
 
+securedir="../log_files/client_logs_cscirepo/var/log/secure"
 
-#sed -en 's/
-
+awk '/Failed/ { print }' $securedir
 
