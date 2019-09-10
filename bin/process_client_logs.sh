@@ -12,7 +12,8 @@ do
 	tar -zxf "$f" --directory "$output_dir"
 done
 
+mkdir tempor
+sed -en 'Failed < $output_dir > tempor
 
-#sed -en 's/
 
-
+ls
