@@ -12,8 +12,7 @@ do
 	tar -zxf "$f" --directory "$output_dir"
 done
 
-mkdir tempor
-sed -en 'Failed < $output_dir > tempor
+securedir="../log_files/client_logs_cscirepo/var/log/secure"
 
+awk '/Failed/ { print }' $securedir
 
-ls
