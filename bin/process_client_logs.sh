@@ -3,8 +3,8 @@
 DIR=$1
 
 cd "$DIR" || exit
-
-
+awk '/Failed/ { print > "holding.txt" }' $DIR/var/log/*
+pwd
 #for f in *.tgz
 #do
 #	output_dir=client_logs_$(basename $f "_secure.tgz")
