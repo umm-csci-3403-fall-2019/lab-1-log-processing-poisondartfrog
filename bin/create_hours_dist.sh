@@ -12,4 +12,4 @@ uniq -c < $DIR/sortedhrs.txt > $DIR/uniqsorthrs.txt
 
 sed -E 's/[ ]+([0-9]+) ([0-9]+)/data.addRow([\x27\2\x27, \1]);/' < $DIR/uniqsorthrs.txt > $DIR/datalisthrs.txt
 
-../bin/wrap_contents.sh $DIR/datalisthrs.txt ../html_components/hours_dist $DIR/hours_dist.html
+bin/wrap_contents.sh $DIR/datalisthrs.txt html_components/hours_dist $DIR/hours_dist.html

@@ -16,4 +16,4 @@ uniq -c < $DIR/sorted.txt > $DIR/uniqsort.txt
 	
 sed -E 's/([0-9]+) ([a-zA-Z0-9_\-]+)/data.addRow([\x27\2\x27, \1]);/' < $DIR/uniqsort.txt >> $DIR/datalist.txt
 	
-./bin/wrap_contents.sh $DIR/datalist.txt html_components/username_dist $DIR/username_dist.html
+bin/wrap_contents.sh $DIR/datalist.txt html_components/username_dist $DIR/username_dist.html
