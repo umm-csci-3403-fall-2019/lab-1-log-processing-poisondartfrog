@@ -16,6 +16,7 @@ done
 
 bin/create_username_dist.sh $SCRATCH
 bin/create_hours_dist.sh $SCRATCH
+bin/create_country_dist.sh $SCRATCH
 
 
 
