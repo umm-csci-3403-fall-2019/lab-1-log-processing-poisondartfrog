@@ -9,8 +9,9 @@ do
     mkdir "$SCRATCH/$output_dir"
     tar -zxf "$f" --directory "$SCRATCH/$output_dir"
    bin/process_client_logs.sh "$SCRATCH/$output_dir"
-   
+
 done
+
 
 bin/create_username_dist.sh "$SCRATCH"
 bin/create_hours_dist.sh "$SCRATCH"

@@ -6,7 +6,7 @@ for f in $(find "$DIR" -name "failed_login_data.txt")
 do
 
 
-	sed -En 's/[a-zA-Z ]+[0-9 ]+[ 0-9]+([a-zA-Z0-9\-_]+)...+/\1/p' < "$f" >> "$DIR/only_usrs.txt"
+	sed -En 's/[a-zA-Z ]+[0-9 ]+[ 0-9]+([a-zA-Z0-9_\-]+)...+/\1/p' < "$f" >> "$DIR/only_usrs.txt"
 	
 done
 
